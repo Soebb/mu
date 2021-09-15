@@ -22,7 +22,7 @@ Bot = Client(
 
 
 START_TXT = """
-Hi, I am Auto Music Tagger Bot.
+Hi {}, I am Auto Music Tagger Bot.
 
 I will remove all usernames in the music tags automatically, and append your own username to music if you defined it already.
 """
