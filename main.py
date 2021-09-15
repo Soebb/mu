@@ -112,7 +112,7 @@ async def tag(bot, m):
     music['lyrics'] = l + custom_tag
     music.save()
     if CAPTION == "TRUE":
-        caption = "✏️ Title: " + t + "\n" + "👤 Artist: " + a + "\n" + "💽 Album: " + al + "\n" + "🎼 Genre: " + g"
+        caption = "✏️ Title: " + t + "\n" + "👤 Artist: " + a + "\n" + "💽 Album: " + al + "\n" + "🎼 Genre: " + g
     else:
         caption = m.caption if m.caption else " "
     try:
