@@ -1,0 +1,6 @@
+pyrogram
+tgcrypto
+music_tag
+mutagen
+requests
+Pillow
