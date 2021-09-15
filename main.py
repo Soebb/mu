@@ -3,10 +3,6 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 import os
 import io
 from PIL import Image
-import mutagen
-from mutagen.mp3 import MP3
-from mutagen.mp4 import MP4
-import requests
 from music_tag import load_file
 from config import Config
 
@@ -129,3 +125,5 @@ async def tag(bot, m):
         )
     except Exception as e:
         print(e)
+
+Bot.run()
