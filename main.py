@@ -104,15 +104,15 @@ async def tag(bot, m):
     music.remove_tag('title')
     music.remove_tag('album')
     music.remove_tag('genre')
-    music['artist'] = a + Config.custom_tag
-    music['title'] = t + Config.custom_tag
-    music['album'] = al + Config.custom_tag
-    music['genre'] = g + Config.custom_tag
-    music['comment'] = c + Config.custom_tag
-    music['lyrics'] = l + Config.custom_tag
+    music['artist'] = a + custom_tag
+    music['title'] = t + custom_tag
+    music['album'] = al + custom_tag
+    music['genre'] = g + custom_tag
+    music['comment'] = c + custom_tag
+    music['lyrics'] = l + custom_tag
     music.save()
     if CAPTION == "TRUE":
-        caption = "✏️ Title: " + t + "\n" + "👤 Artist: " + a + "\n" + "💽 Album: " + al + "\n" + "🎼 Genre: " + g + "\n\n" + f"🆔👉 {Config.USERNAME}"
+        caption = "✏️ Title: " + t + "\n" + "👤 Artist: " + a + "\n" + "💽 Album: " + al + "\n" + "🎼 Genre: " + g"
     else:
         caption = m.caption if m.caption else " "
     try:
