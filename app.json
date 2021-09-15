@@ -4,6 +4,15 @@
     "BOT_TOKEN": {
       "description": "Your bot token, as a string.",
       "value": ""
+    "DYNAMIC_CAPTION": {
+      "description": "(Optional) Set this to TRUE if you want a dynamic caption be added to the musics.",
+      "value": "TRUE",
+      "required": false
+    },
+    "CUSTOM_TAG": {
+      "description": "(Optional) Add a username to be appended to the music tags",
+      "value": "@my_channel",
+      "required": false
     },
     "API_ID": {
       "description": "Add your telegram API_ID",
@@ -15,9 +24,6 @@
 }
   },
   "buildpacks": [
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-    },
     {
       "url": "heroku/python"
     }
