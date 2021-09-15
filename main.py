@@ -4,7 +4,6 @@ import os
 import io
 from PIL import Image
 from music_tag import load_file
-from config import Config
 
 
 CAPTION = os.environ.get("DYNAMIC_CAPTION")
@@ -125,5 +124,6 @@ async def tag(bot, m):
         )
     except Exception as e:
         print(e)
+
 
 Bot.run()
