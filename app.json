@@ -4,6 +4,7 @@
     "BOT_TOKEN": {
       "description": "Your bot token, as a string.",
       "value": ""
+    },
     "DYNAMIC_CAPTION": {
       "description": "(Optional) Set this to TRUE if you want a dynamic caption be added to the musics.",
       "value": "TRUE",
