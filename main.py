@@ -6,18 +6,20 @@ from PIL import Image
 from music_tag import load_file
 
 
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
+API_ID = os.environ.get("API_ID")
+API_HASH = os.environ.get("API_HASH")
 CAPTION = os.environ.get("DYNAMIC_CAPTION")
 if 'CUSTOM_TAG' in os.environ:
     custom_tag = " [" + os.environ.get("CUSTOM_TAG") + "]"
 else:
     custom_tag = " "
 
-
 Bot = Client(
     "Bot",
-    bot_token = Config.BOT_TOKEN,
-    api_id = Config.API_ID,
-    api_hash = Config.API_HASH
+    bot_token = BOT_TOKEN,
+    api_id = API_ID,
+    api_hash = API_HASH
 )
 
 
